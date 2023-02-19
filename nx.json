@@ -7,6 +7,7 @@
     "defaultCollection": "@nrwl/web"
   },
   "implicitDependencies": {
+    "workspace.json": "*",
     "package.json": {
       "dependencies": "*",
       "devDependencies": "*"
@@ -35,7 +36,7 @@
       }
     ]
   },
-  "defaultProject": "wc-app",
+  "defaultProject": "components-wc-hello-world",
   "generators": {
     "@nrwl/web:application": {
       "style": "css",

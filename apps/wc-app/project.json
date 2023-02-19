@@ -1,6 +1,7 @@
 {
+  "name": "wc-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "root": "apps/wc-app",
   "sourceRoot": "apps/wc-app/src",
   "tags": [],
   "targets": {

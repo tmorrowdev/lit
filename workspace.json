@@ -1,9 +1,10 @@
 {
-  "version": 2,
-  "projects": {
-    "components-wc-hello-world": "libs/components/wc-hello-world",
-    "components-wc-hello-world-e2e": "apps/components-wc-hello-world-e2e",
-    "wc-app": "apps/wc-app",
-    "wc-app-e2e": "apps/wc-app-e2e"
-  }
+    "version":2,
+    "projects" :{
+        "components-wc-hello-world" : "libs/components/wc-hello-world/src/index.ts",
+        "components-wc-hello-world-e2e" : "apps/components-wc-hello-world-e2e/src/support/index.ts",
+        "wc-app": "apps/wc-app/src/main.ts",
+        "wc-app-e2e": "apps/wc-app-e2e/src/support/index.ts",
+        "cigna-lit-nx-plugin": "libs/lit-nx-plugin/src/index.ts"
+    }
 }

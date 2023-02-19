@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "lit-nx-plugin",
+  "version": "0.0.1",
+  "generators": {
+    "lit-nx-plugin": {
+      "factory": "./src/generators/lit-nx-plugin/generator",
+      "schema": "./src/generators/lit-nx-plugin/schema.json",
+      "description": "lit-nx-plugin generator"
+    }
+  }
+}

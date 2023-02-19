@@ -17,8 +17,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@cigna/lit-nx-plugin": ["libs/lit-nx-plugin/src/index.ts"],
       "@ui/wc-hello-world": ["libs/components/wc-hello-world/src/index.ts"]
     }
   },
+  "include": ["workspace.json"],
   "exclude": ["node_modules", "tmp"]
 }

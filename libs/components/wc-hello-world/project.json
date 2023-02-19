@@ -1,13 +1,15 @@
 {
+  "name": "components-wc-hello-world",
   "root": "libs/components/wc-hello-world",
   "sourceRoot": "libs/components/wc-hello-world/src",
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/js:tsc",
+      "executor": "@nrwl/web:rollup",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/components/wc-hello-world",
+        "rollupConfig": "libs/components/wc-hello-world/rollup.config.js",
         "main": "libs/components/wc-hello-world/src/index.ts",
         "tsConfig": "libs/components/wc-hello-world/tsconfig.lib.json",
         "assets": ["libs/components/wc-hello-world/*.md"]

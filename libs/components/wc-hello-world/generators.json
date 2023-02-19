@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "@cigna/lit-nx-plugin": {
+      "factory": "./src/generators/@cigna/lit-nx-plugin/generator",
+      "schema": "./src/generators/@cigna/lit-nx-plugin/schema.json",
+      "description": "@cigna/lit-nx-plugin generator"
+    }
+  }
+}

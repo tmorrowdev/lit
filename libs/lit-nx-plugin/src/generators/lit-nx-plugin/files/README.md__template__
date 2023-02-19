@@ -1,0 +1,7 @@
+# <%= directory %>-<%= name %>
+
+This library was generated with [Nx](https://nx.dev).
+
+## Building
+
+Run `nx build <%= directory %>-<%= name %>` to build the library.

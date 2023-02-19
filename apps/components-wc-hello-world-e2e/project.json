@@ -1,5 +1,6 @@
 {
-  "root": "apps/components-wc-hello-world-e2e",
+  "name": "components-wc-hello-world-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/components-wc-hello-world-e2e/src",
   "projectType": "application",
   "targets": {

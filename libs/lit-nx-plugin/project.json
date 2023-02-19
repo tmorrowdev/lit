@@ -1,0 +1,66 @@
+{
+  "name": "cigna-lit-nx-plugin",
+  "sourceRoot": "libs/lit-nx-plugin/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/lit-nx-plugin",
+        "main": "libs/lit-nx-plugin/src/index.ts",
+        "tsConfig": "libs/lit-nx-plugin/tsconfig.lib.json",
+        "assets": [
+          "libs/lit-nx-plugin/*.md",
+          {
+            "input": "./libs/lit-nx-plugin/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/lit-nx-plugin/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/lit-nx-plugin",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/lit-nx-plugin",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/lit-nx-plugin/**/*.ts",
+          "libs/lit-nx-plugin/generators.json",
+          "libs/lit-nx-plugin/executors.json",
+          "libs/lit-nx-plugin/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/lit-nx-plugin/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
